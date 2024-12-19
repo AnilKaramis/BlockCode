@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A52C9FD92D1400360027F1AC /* UIColor+AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C9FD82D1400360027F1AC /* UIColor+AppColors.swift */; };
+		A52C9FDB2D1400790027F1AC /* Coordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A52C9FDA2D1400790027F1AC /* Coordinator.swift */; };
 		A54C67FF2D12C1240054CDD2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54C67F52D12C1240054CDD2 /* AppDelegate.swift */; };
 		A54C68002D12C1240054CDD2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54C67FC2D12C1240054CDD2 /* SceneDelegate.swift */; };
 		A54C68012D12C1240054CDD2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A54C67FD2D12C1240054CDD2 /* ViewController.swift */; };
@@ -16,6 +18,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		A52C9FD82D1400360027F1AC /* UIColor+AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+AppColors.swift"; sourceTree = "<group>"; };
+		A52C9FDA2D1400790027F1AC /* Coordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coordinator.swift; sourceTree = "<group>"; };
 		A54C67DD2D12C11F0054CDD2 /* BlockCode.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BlockCode.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A54C67F52D12C1240054CDD2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A54C67F62D12C1240054CDD2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -48,6 +52,69 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		A52C9FD02D13FF2B0027F1AC /* Views */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A52C9FD12D13FF300027F1AC /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A52C9FD82D1400360027F1AC /* UIColor+AppColors.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A52C9FD22D13FF380027F1AC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A52C9FD32D13FF3F0027F1AC /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+				A52C9FDA2D1400790027F1AC /* Coordinator.swift */,
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		A52C9FD42D13FF5A0027F1AC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A54C67F62D12C1240054CDD2 /* Assets.xcassets */,
+				A54C67F72D12C1240054CDD2 /* Info.plist */,
+				A54C67F92D12C1240054CDD2 /* LaunchScreen.storyboard */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		A52C9FD52D13FF780027F1AC /* Base */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		A52C9FD62D13FF7D0027F1AC /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
+			sourceTree = "<group>";
+		};
+		A52C9FD72D13FFA40027F1AC /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				A54C67F52D12C1240054CDD2 /* AppDelegate.swift */,
+				A54C67FC2D12C1240054CDD2 /* SceneDelegate.swift */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
 		A54C67D42D12C11F0054CDD2 = {
 			isa = PBXGroup;
 			children = (
@@ -69,11 +136,14 @@
 		A54C67FE2D12C1240054CDD2 /* BlockCode */ = {
 			isa = PBXGroup;
 			children = (
-				A54C67F52D12C1240054CDD2 /* AppDelegate.swift */,
-				A54C67F62D12C1240054CDD2 /* Assets.xcassets */,
-				A54C67F72D12C1240054CDD2 /* Info.plist */,
-				A54C67F92D12C1240054CDD2 /* LaunchScreen.storyboard */,
-				A54C67FC2D12C1240054CDD2 /* SceneDelegate.swift */,
+				A52C9FD22D13FF380027F1AC /* Models */,
+				A52C9FD12D13FF300027F1AC /* Extensions */,
+				A52C9FD42D13FF5A0027F1AC /* Resources */,
+				A52C9FD72D13FFA40027F1AC /* Application */,
+				A52C9FD62D13FF7D0027F1AC /* Scenes */,
+				A52C9FD52D13FF780027F1AC /* Base */,
+				A52C9FD32D13FF3F0027F1AC /* Protocols */,
+				A52C9FD02D13FF2B0027F1AC /* Views */,
 				A54C67FD2D12C1240054CDD2 /* ViewController.swift */,
 			);
 			path = BlockCode;
@@ -85,7 +155,6 @@
 				F0ADBABA8F6DCAC3CE30136E /* Pods-BlockCode.debug.xcconfig */,
 				E51F7F4201C7163B1C518640 /* Pods-BlockCode.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -205,6 +274,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				A54C67FF2D12C1240054CDD2 /* AppDelegate.swift in Sources */,
+				A52C9FD92D1400360027F1AC /* UIColor+AppColors.swift in Sources */,
+				A52C9FDB2D1400790027F1AC /* Coordinator.swift in Sources */,
 				A54C68002D12C1240054CDD2 /* SceneDelegate.swift in Sources */,
 				A54C68012D12C1240054CDD2 /* ViewController.swift in Sources */,
 			);
@@ -235,7 +306,7 @@
 				DEVELOPMENT_TEAM = 6HX5P2M97J;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BlockCode/Info.plist;
+				INFOPLIST_FILE = BlockCode/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
@@ -265,7 +336,7 @@
 				DEVELOPMENT_TEAM = 6HX5P2M97J;
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = BlockCode/Info.plist;
+				INFOPLIST_FILE = BlockCode/Resources/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = "";
