@@ -7,7 +7,7 @@
 
 import UIKit
 
-protocol Coordinator {
+protocol Coordinator:AnyObject {
     
     var rootCoordinator: Coordinator? { get set}
     var navigationController: UINavigationController { get }
@@ -17,18 +17,4 @@ protocol Coordinator {
     func didFinish(coordinator: Coordinator)
     func removeChildCoordinates()
     
-}
-
-class new:UIViewController {
-    func example1(Sadecetoplamalaradakullan x:Int) {
-        
-    }
-    func example2(x:Int) {
-         
-    }
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        example2(x: 10)
-        example1(Sadecetoplamalaradakullan: 10)
-    }
 }
